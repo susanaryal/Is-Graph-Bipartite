@@ -1,1 +1,35 @@
-# Is-Graph-Bipartite-
+# Is Graph Bipartite?
+
+### Given an undirected graph, return true if and only if it is bipartite.
+
+### Recall that a graph is bipartite if we can split it's set of nodes into two independent subsets A and B such that every edge in the graph has one node in A and another node in B.
+
+### The graph is given in the following form: graph[i] is a list of indexes j for which the edge between nodes i and j exists.  Each node is an integer between 0 and graph.length - 1.  There are no self edges or parallel edges: graph[i] does not contain i, and it doesn't contain any element twice.
+
+* Example 1:<br>
+Input: [[1,3], [0,2], [1,3], [0,2]] <br>
+Output: true<br>
+Explanation: <br>
+The graph looks like this:<br>
+0----1<br>
+|........|<br>
+|........|<br>
+3----2<br>
+We can divide the vertices into two groups: {0, 2} and {1, 3}.<br>
+* Example 2:<br>
+Input: [[1,2,3], [0,2], [0,1,3], [0,2]]<br>
+Output: false<br>
+Explanation: <br>
+The graph looks like this:<br>
+0----1<br>
+|..\\.....|<br>
+|.....\\..|<br>
+3----2<br>
+We cannot find a way to divide the set of nodes into two independent subsets.<br>
+ 
+
+* Note:
+> graph will have length in range [1, 100].<br>
+> graph[i] will contain integers in range [0, graph.length - 1].<br>
+> graph[i] will not contain i or duplicate values.<br>
+> The graph is undirected: if any element j is in graph[i], then i will be in graph[j].<br>
