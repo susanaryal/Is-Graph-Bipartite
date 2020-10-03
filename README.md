@@ -32,4 +32,4 @@ We cannot find a way to divide the set of nodes into two independent subsets.<br
 > graph will have length in range [1, 100].<br>
 > graph[i] will contain integers in range [0, graph.length - 1].<br>
 > graph[i] will not contain i or duplicate values.<br>
-> The graph is undirected: if any element j is in graph[i], then i will be in graph[j].<br>
+> The graph is undirected: if any element j is in graph[i], then i will be in graph[j].<br> 
